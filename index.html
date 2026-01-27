@@ -458,40 +458,33 @@
             <span class="bg-purple-600 w-2 h-8 rounded-full"></span> PILIH GAME
         </h2>
         
-       <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-5">
-            <div onclick="pilihGame('mlbb')"class="cursor-pointer">
-                <img src="https://i.postimg.cc/T1q1bp17/Whats-App-Image-2026-01-22-at-14-56-44.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
-      Mobile Legends: Bang Bang
-    </p>
+       <div class="flex justify-start gap-4 p-5">
+             <div onclick="pilihGame('mlbb')">
+                <img src="c:\Users\sukses\Downloads\WhatsApp Image 2026-01-22 at 14.56.44.jpeg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Mobile Legends: Bang Bang</p>
             </div>
             
-            <div onclick="pilihGame('ffmax')"class="cursor-pointer">
-                <img src="https://i.postimg.cc/wvnfKrTW/Whats-App-Image-2026-01-22-at-14-56-43-(1).jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FF MAX">
-            <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
-      Free Fire MAX
-    </p>
-     </div>
-            <div onclick="pilihGame('ff')"class="cursor-pointer">
-                <img src="https://i.postimg.cc/ht80yjmd/Whats-App-Image-2026-01-22-at-14-56-43-(2).jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FF">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
-      Free Fire
-    </p>
+             <div onclick="pilihGame('ff')">
+                <img src="c:\Users\sukses\Downloads\WhatsApp Image 2026-01-22 at 14.56.43 (2).jpeg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Free Fire</p>
             </div>
             
-            <div onclick="pilihGame('magic')"class="cursor-pointer" >
-                <img src="https://i.postimg.cc/g0nHYK5d/Whats-App-Image-2026-01-22-at-14-56-43.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="Magic Chess">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
-      Magic Chess: Go Go
-    </p>
+             <div onclick="pilihGame('FFMAX')">
+                <img src="c:\Users\sukses\Downloads\WhatsApp Image 2026-01-22 at 14.56.43 (1).jpeg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Free Fire MAX</p>
             </div>
-            
-            <div onclick="pilihGame('fc')"class="cursor-pointer">
-                <img src="https://i.postimg.cc/7hBFT9Hq/Whats-App-Image-2026-01-22-at-14-56-42.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FC Mobile">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
-      EA SPORTS FC™ Mobile
-    </p>
+    
+            <div onclick="pilihGame('magic')">
+                <img src="c:\Users\sukses\Downloads\WhatsApp Image 2026-01-22 at 14.56.43.jpeg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Magic Chess: Go Go</p>
             </div>
+
+             <div onclick="pilihGame('fc')">
+                <img src="c:\Users\sukses\Downloads\WhatsApp Image 2026-01-22 at 14.56.42.jpeg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
+                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">EA SPORTS FC™ Mobile</p>
+            </div>
+</div>
+
       </div>
     </div>
     <div id="main-content" class="hidden space-y-6 max-w-4xl mx-auto">
@@ -527,7 +520,7 @@
         const dbGame = {
             mlbb: { nama: "Mobile Legends: Bang Bang", placeholder: "User ID", needZone: true, nominal: [{dm:"3 DM", harga:"Rp 1.100"},{dm:"5 DM", harga:"Rp 1.600"},{dm:"19 DM", harga:"Rp 6.223"},{dm:"44 DM", harga:"Rp 12.400"},{dm:"59 DM", harga:"Rp 16.200"},{dm:"85 DM", harga:"Rp 22.850"}, {dm:"170 DM", harga:"Rp 44.700"},{dm:"240 DM", harga:"Rp 62.720"},{dm:"296 DM", harga:"Rp 77.500"} ,{dm:"408 DM", harga:"Rp 105.500"} 
                ,{dm:"875 DM", harga:"Rp 219.500"},{dm:"2010 DM", harga:"Rp 475.700"},] },
-            ffmax: { nama: "Free Fire MAX", placeholder: "Player ID", needZone: false, nominal: [{dm:"5 DM", harga:"Rp 900"}, {dm:"30 DM", harga:"Rp 7.000"} , {dm:"70 DM", harga:"Rp 10.000"}, {dm:"100 DM", harga:"Rp 15.000"}, {dm:"140 DM", harga:"Rp 20.000"}
+            ffmax : { nama: "Free Fire MAX", placeholder: "Player ID", needZone: false, nominal: [{dm:"5 DM", harga:"Rp 900"}, {dm:"30 DM", harga:"Rp 7.000"} , {dm:"70 DM", harga:"Rp 10.000"}, {dm:"100 DM", harga:"Rp 15.000"}, {dm:"140 DM", harga:"Rp 20.000"}
               , {dm:"200 DM", harga:"Rp 28.500"}, {dm:"300 DM", harga:"Rp 45.000"}, {dm:"355 DM", harga:"Rp 46.000"}, {dm:"475 DM", harga:"Rp 65.000"}, {dm:"500 DM", harga:"Rp 70.000"}, {dm:"600 DM", harga:"Rp 78.912"}, {dm:"770 DM", harga:"Rp 100.500"}
             , {dm:"1000 DM", harga:"Rp 134.000"}, {dm:"1300 DM", harga:"Rp 174.500"}
             ] },
